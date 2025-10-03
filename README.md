@@ -1,33 +1,49 @@
-# GhostDropETH - First Guide
+# GhostDropETH - Affiliate-Ready VPN Guide
 
-This repository contains a simple, working affiliate guide and landing page. It’s designed as a starting point for learning about affiliate marketing with free tools.
+This repository contains a polished affiliate landing page and companion guide for promoting vetted VPN offers. Use it as a plug-and-play template: drop in your affiliate IDs, regenerate the PDF, and deploy to GitHub Pages.
 
 ## What’s Inside
 
-- `guide.md` – The source for the guide, written in Markdown. You can edit this file to update the content or replace the links with your own affiliate URLs.
-- `guide.pdf` – A generated PDF version of the guide. If you change `guide.md` you can regenerate this file locally with Pandoc (see below).
-- `index.html` – A minimal landing page that links to the PDF and includes an affiliate disclosure.
-- `disclose.md` – The text of the affiliate disclosure used in the guide and site.
-- `.github/workflows/gh‑pages.yml` – A GitHub Actions workflow that automatically deploys the site to GitHub Pages whenever you push to the `main` branch.
-- `.gitignore` – Configuration to avoid committing unnecessary files, such as compiled Python files and your local `.env` file.
+- `guide.md` – The Markdown source for the full VPN guide, including deal tables, setup steps, and FAQs. Update the `YOUR_*_AFFILIATE_ID` placeholders with the IDs from your affiliate dashboards.
+- `guide.pdf` – A generated PDF version of the guide. Regenerate this file after updating `guide.md` so the downloadable version stays in sync.
+- `index.html` – A modern landing page highlighting the featured deals with disclosure copy that matches the guide.
+- `disclose.md` – Reusable disclosure text you can embed in additional assets (emails, blog posts, etc.).
+- `.github/workflows/gh-pages.yml` – GitHub Actions workflow that deploys the site to GitHub Pages whenever you push to `main`.
+- `.gitignore` – Keeps build artifacts and secrets out of version control.
 
-## Getting Started
+## Customize the Affiliate Links
 
-1. Fork or clone this repository to your own GitHub account.
-2. Edit `guide.md` and replace the example affiliate URLs with your own. Feel free to expand the guide with additional sections or recommendations.
-3. (Optional) Regenerate `guide.pdf` from `guide.md` using Pandoc:
+1. Sign up for the NordVPN, Surfshark, and ExpressVPN affiliate programs (Impact/PartnerStack/etc.).
+2. Replace each `YOUR_*_AFFILIATE_ID` placeholder in `guide.md` and `index.html` with your assigned affiliate ID or tracking token.
+3. Optionally add `aff_sub` or `utm_*` parameters for campaign tracking.
 
-   ```bash
-   pandoc guide.md -o guide.pdf --from markdown --pdf-engine=wkhtmltopdf
-   ```
+> 💡 Tip: Store your IDs in a `.env` file and use a templating step if you maintain multiple variants (e.g., TikTok vs. newsletter campaigns).
 
-4. Commit your changes and push them to your GitHub repository.
-5. In the GitHub repository settings, enable GitHub Pages and set the source to “GitHub Actions.” The included workflow will build and publish your site automatically.
+## Regenerate the PDF
 
-Your site will be available at:
+Pandoc is the simplest way to regenerate `guide.pdf`:
 
-```
-https://yourusername.github.io/GhostDropETH/
+```bash
+pandoc guide.md -o guide.pdf --from markdown --pdf-engine=wkhtmltopdf
 ```
 
-Replace `yourusername` with your GitHub username. You can share the link with anyone who wants the guide.
+If Pandoc or `wkhtmltopdf` is not installed locally, install them via Homebrew (`brew install pandoc wkhtmltopdf`) or your package manager of choice.
+
+## Deploy to GitHub Pages
+
+1. Fork or clone this repository.
+2. Commit your affiliate ID updates.
+3. Push to `main`. The included workflow will build and publish the landing page to the `gh-pages` branch.
+4. In GitHub, enable Pages and set the source to the deployed branch (GitHub Actions).
+
+Your live site will be available at:
+
+```
+https://<your-username>.github.io/GhostDropETH/
+```
+
+Share that URL anywhere you promote the guide.
+
+## Licensing & Attribution
+
+The content in this repository is provided “as is.” You’re free to adapt it for your affiliate marketing campaigns. Please retain the disclosure language to stay compliant with FTC guidelines.
