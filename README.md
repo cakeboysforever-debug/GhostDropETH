@@ -35,6 +35,17 @@ This repository now pairs the polished affiliate landing page with a lightweight
 
 Pandoc is the simplest way to regenerate `guide.pdf`:
 
+1. Sign up for the NordVPN, Surfshark, and ExpressVPN affiliate programs (Impact/PartnerStack/etc.).
+2. Replace each `YOUR_*_AFFILIATE_ID` placeholder in `guide.md` and `index.html` with your assigned affiliate ID or tracking token.
+3. Run the OSINT profile script (see below) to confirm your talking points match the latest disclosures.
+4. Optionally add `aff_sub` or `utm_*` parameters for campaign tracking.
+
+> 💡 Tip: Store your IDs in a `.env` file and use a templating step if you maintain multiple variants (e.g., TikTok vs. newsletter campaigns).
+
+## Regenerate the PDF
+
+Pandoc is the simplest way to regenerate `guide.pdf`:
+
 ```bash
 pandoc guide.md -o guide.pdf --from markdown --pdf-engine=wkhtmltopdf
 ```
