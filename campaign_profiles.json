@@ -1,0 +1,60 @@
+[
+  {
+    "campaign": "Streaming Unlock Launch",
+    "niche": "Entertainment Influencers",
+    "objective": "Partner with creators who regularly discuss geo-blocked streaming content and VPN workarounds.",
+    "lead_channels": ["YouTube", "TikTok", "Twitter"],
+    "review_cadence": "Weekly",
+    "usernames": [
+      {
+        "handle": "@StreamSavvyShow",
+        "platform": "YouTube",
+        "profile_url": "https://youtube.com/@StreamSavvyShow",
+        "audience_summary": "55k subscribers focused on movie streaming guides and platform comparisons.",
+        "vetting_status": "Approved",
+        "last_reviewed": "2024-05-01",
+        "risk_flags": "Previously disclosed sponsored VPN content; ensure fresh talking points.",
+        "notes": "Engaged comments asking about regional access—good fit for unblocking messaging."
+      },
+      {
+        "handle": "@BingeWatcherBits",
+        "platform": "TikTok",
+        "profile_url": "https://www.tiktok.com/@bingewatcherbits",
+        "audience_summary": "120k followers; daily shorts on new series availability by region.",
+        "vetting_status": "Research",
+        "last_reviewed": "2024-05-02",
+        "risk_flags": "No prior affiliate disclosures observed—double-check policy compliance.",
+        "notes": "Flag for outreach script focused on regional exclusives."
+      }
+    ]
+  },
+  {
+    "campaign": "Remote Work Security Blitz",
+    "niche": "Productivity & SaaS Creators",
+    "objective": "Highlight zero-trust habits for digital nomads and remote teams.",
+    "lead_channels": ["LinkedIn", "YouTube"],
+    "review_cadence": "Bi-weekly",
+    "usernames": [
+      {
+        "handle": "@NomadSecNotes",
+        "platform": "LinkedIn",
+        "profile_url": "https://www.linkedin.com/in/nomadsecnotes",
+        "audience_summary": "Operations manager newsletter spotlighting remote work security gaps.",
+        "vetting_status": "Approved",
+        "last_reviewed": "2024-04-25",
+        "risk_flags": "Occasional mentions of competitor VPNs—prep comparative talking points.",
+        "notes": "Warm intro via shared Slack community contact."
+      },
+      {
+        "handle": "@AsyncArmor",
+        "platform": "YouTube",
+        "profile_url": "https://youtube.com/@AsyncArmor",
+        "audience_summary": "38k subscribers; long-form explainers on distributed team tooling.",
+        "vetting_status": "Hold",
+        "last_reviewed": "2024-04-28",
+        "risk_flags": "Requests SOC 2 proof for all sponsors.",
+        "notes": "Coordinate with compliance team to prep documentation packet."
+      }
+    ]
+  }
+]
