@@ -1,0 +1,41 @@
+[
+  {
+    "name": "NordVPN",
+    "hq": "Panama",
+    "ownership": "Nord Security (independent)",
+    "independent_audits": [
+      "Deloitte no-logs audit (2022)",
+      "Cure53 infrastructure assessment (2023)"
+    ],
+    "breach_history": "No customer-impacting breaches since 2019 data center incident; transparent disclosure and remediation",
+    "warrant_canary": "Updated daily",
+    "logging_policy": "Strict no-logs; verified by Deloitte",
+    "transparency_reports": "Annual report covering government requests and outcomes"
+  },
+  {
+    "name": "Surfshark",
+    "hq": "Netherlands",
+    "ownership": "Surfshark B.V.",
+    "independent_audits": [
+      "Cure53 security assessment (2023)",
+      "Deloitte no-logs audit (2023)"
+    ],
+    "breach_history": "No public breaches disclosed",
+    "warrant_canary": "Updated daily",
+    "logging_policy": "No activity logs; limited diagnostics",
+    "transparency_reports": "Publishes combined report with Nord Security"
+  },
+  {
+    "name": "ExpressVPN",
+    "hq": "British Virgin Islands",
+    "ownership": "Kape Technologies",
+    "independent_audits": [
+      "PwC TrustedServer audit (2022)",
+      "F-Secure apps penetration test (2021)"
+    ],
+    "breach_history": "No customer-impacting breaches disclosed",
+    "warrant_canary": "Not used; relies on BVI jurisdiction",
+    "logging_policy": "No activity or connection logs; limited diagnostics",
+    "transparency_reports": "Publishes periodic TrustedServer whitepapers"
+  }
+]

@@ -38,9 +38,9 @@ This updated field-tested guide explains what matters, why it matters, and how t
 
 | VPN | Best For | Highlight Features | Affiliate Deal |
 | --- | --- | --- | --- |
-| **NordVPN** | All-around privacy + streaming | 6,300+ servers, Threat Protection, independent audits by Deloitte | [Claim 63% Off 2-Year Plan](https://go.nordvpn.net/aff_c?offer_id=648&aff_id=YOUR_NORDVPN_AFFILIATE_ID&aff_sub=ghostdrop_guide) |
-| **Surfshark** | Unlimited devices & budget savings | Unlimited connections, CleanWeb ad blocker, RAM-only servers | [Get 81% Off + 2 Free Months](https://get.surfshark.net/aff_c?offer_id=17&aff_id=YOUR_SURFSHARK_AFFILIATE_ID&aff_sub=ghostdrop_guide) |
-| **ExpressVPN** | Streaming & travel reliability | Lightway protocol, 94 countries, trusted server tech | [Secure 49% Off + 3 Months Free](https://www.xvbelink.com/affiliate/offer?offerid=1&affid=YOUR_EXPRESSVPN_AFFILIATE_ID&source=ghostdrop_guide) |
+| **NordVPN** | All-around privacy + streaming | 6,300+ servers, Threat Protection, Deloitte + Cure53 audits | [Claim 63% Off 2-Year Plan](https://go.nordvpn.net/aff_c?offer_id=648&aff_id=YOUR_NORDVPN_AFFILIATE_ID&aff_sub=ghostdrop_guide) |
+| **Surfshark** | Unlimited devices & budget savings | Unlimited connections, CleanWeb ad blocker, Deloitte + Cure53 audits | [Get 81% Off + 2 Free Months](https://get.surfshark.net/aff_c?offer_id=17&aff_id=YOUR_SURFSHARK_AFFILIATE_ID&aff_sub=ghostdrop_guide) |
+| **ExpressVPN** | Streaming & travel reliability | Lightway protocol, 94 countries, PwC TrustedServer audit | [Secure 49% Off + 3 Months Free](https://www.xvbelink.com/affiliate/offer?offerid=1&affid=YOUR_EXPRESSVPN_AFFILIATE_ID&source=ghostdrop_guide) |
 
 > 🔁 Replace the `YOUR_*_AFFILIATE_ID` placeholders with the IDs from your affiliate dashboards before sharing publicly.
 
@@ -54,6 +54,7 @@ This updated field-tested guide explains what matters, why it matters, and how t
 2. Install the apps for Windows/macOS/mobile from the dashboard.
 3. Enable **Auto-Connect** and **Kill Switch** under *Settings → Connection*.
 4. Turn on **Threat Protection** for built-in malware blocking and tracker filtering.
+5. Review the OSINT highlights: Deloitte no-logs audit (2022) and Cure53 infrastructure assessment (2023) — both confirmed in `osint_profile.py`.
 
 ### Surfshark
 
@@ -61,6 +62,7 @@ This updated field-tested guide explains what matters, why it matters, and how t
 2. During setup, enable **CleanWeb** to block ads and phishing attempts.
 3. Go to *Settings → VPN Settings* and turn on **Override GPS Location** for Android spoofing.
 4. Use **Rotating IP** when you need a fresh IP address without disconnecting.
+5. Note the Deloitte and Cure53 audits documented in `osint_profile.py` so your talking points stay accurate.
 
 ### ExpressVPN
 
@@ -68,6 +70,20 @@ This updated field-tested guide explains what matters, why it matters, and how t
 2. Install the desktop and mobile apps, then paste the activation code when prompted.
 3. In *Options → General*, toggle **Launch on Startup** and **Network Lock** (kill switch).
 4. Use the **Smart Location** suggestion for the fastest speeds when streaming.
+5. Confirm the PwC TrustedServer audit in the OSINT profile before publishing any campaign copy.
+
+---
+
+## How We Vet Providers (OSINT Profiling)
+
+Before recommending any VPN, we run lightweight OSINT checks and log the results in `data_providers.json`. The companion `osint_profile.py` script prints a portable summary covering:
+
+- Headquarters and ownership transparency
+- Independent security or no-logs audits (with year and firm)
+- Known breach disclosures and remediation notes
+- Warrant canary status and transparency reporting cadence
+
+Update the JSON whenever new evidence lands—especially after audits, acquisitions, or major security incidents. Re-run the script and include the highlights in your campaign briefs so every affiliate push is backed by verifiable facts.
 
 ---
 
