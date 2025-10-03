@@ -1,1 +1,1 @@
-Disclosure: Some of the links in this guide are affiliate links. We may earn a commission if you purchase through them at no extra cost to you. We only recommend tools we believe are genuinely useful.
+Disclosure: Some links in this guide and on the landing page are affiliate links. If you purchase through them we may earn a commission at no extra cost to you. We only recommend services we trust for privacy, reliability, and support.
